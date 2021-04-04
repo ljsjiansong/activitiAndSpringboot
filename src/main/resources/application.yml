@@ -1,0 +1,14 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: spring-activiti
+  datasource:
+    url: jdbc:mysql://localhost:3306/activiti?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT&nullCatalogMeansCurrent=true
+    username: root
+    password: ljs
+    driver-class-name: com.mysql.jdbc.Driver
+  activiti:
+    database-schema-update: true
+    history-level: full
+    db-history-used: true
